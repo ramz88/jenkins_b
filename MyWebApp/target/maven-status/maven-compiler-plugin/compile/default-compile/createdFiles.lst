@@ -1,0 +1,9 @@
+trng/java/Student/ManagerUpdateServlet.class
+trng/java/Student/RegistrationServlet.class
+trng/java/service/LoginServiceInterface.class
+trng/servlet/LoginServlet.class
+trng/java/service/LoginServiceImpl.class
+trng/java/Student/ManagerAddServlet.class
+trng/java/bean/LoginRequest.class
+trng/java/Student/StudentLoginServlet.class
+trng/java/util/LoginUtility.class

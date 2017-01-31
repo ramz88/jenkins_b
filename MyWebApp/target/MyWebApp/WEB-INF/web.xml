@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" metadata-complete="true">
+
+	<display-name>My Web Application</display-name>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>trng.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StudentLoginServlet</servlet-name>
+		<servlet-class>trng.java.Student.StudentLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentLoginServlet</servlet-name>
+		<url-pattern>/slogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<servlet-class>trng.java.Student.RegistrationServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			</description>
+		<display-name>ManagerAddServlet</display-name>
+		<servlet-name>ManagerAddServlet</servlet-name>
+		<servlet-class>trng.java.Student.ManagerAddServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			</description>
+		<display-name>ManagerUpdateServlet</display-name>
+		<servlet-name>ManagerUpdateServlet</servlet-name>
+		<servlet-class>trng.java.Student.ManagerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationServlet</servlet-name>
+		<url-pattern>/sregister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerAddServlet</servlet-name>
+		<url-pattern>/mAdd</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerUpdateServlet</servlet-name>
+		<url-pattern>/update.do</url-pattern>
+	</servlet-mapping>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>coretag</taglib-uri>
+			<taglib-location>tlds/c.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
